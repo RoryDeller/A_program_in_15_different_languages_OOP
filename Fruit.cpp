@@ -18,17 +18,17 @@ string Fruit::getLongestName() {
 	return longestName;
 }
 Fruit::Fruit(string name, string colour) {
-	this.name = name;
+	this -> name = name;
 	if (name.length() > longestName.length()) {
 		longestName = name;
 	}
-	this.colour = colour;
+	this -> colour = colour;
 }
 string Fruit::getName() {
-	return name;
+	return this -> name;
 }
 void Fruit::setColour(string colour) {
-	this.colour = colour;
+	this -> colour = colour;
 }
 string Fruit::describe() {
 	return "I am a " + colour + " fruit called " + name + ".";

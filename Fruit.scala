@@ -5,7 +5,7 @@ class Fruit(private var name: String, private var colour: String) {
 	}
 	def getName(): String = name
 	def setColour(colour: String): Unit = {
-		colour = colour
+		this.colour = colour
 	}
 	def describe(): String = "I am a " + colour + " fruit called " + name + "."
 }

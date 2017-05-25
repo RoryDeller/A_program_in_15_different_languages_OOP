@@ -14,7 +14,8 @@ class Fruit:
 		self.colour = colour
 	def describe(self):
 		return "I am a " + self.colour + " fruit called " + self.name + "."
-for i in range(10, 0, -1):
+start = input("Count down from what number? ")
+for i in range(int(start), 0, -1):
 	print(str(i) + ", ", end="")
 print ("lift off!")
 fruits = [ Fruit("Apple", "Green"),

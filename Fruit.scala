@@ -1,4 +1,5 @@
 import scala.collection.mutable.ListBuffer
+import scala.io.StdIn.{readInt}
 class Fruit(private var name: String, private var colour: String) {
 	if (name.length() > Fruit.longestName.length()) {
 		Fruit.longestName = name
@@ -13,7 +14,9 @@ object Fruit {
 	private var longestName = ""
 	def getLongestName(): String = longestName
 	def main(args: Array[String]): Unit = {
-		for (i <- 10 to 1 by -1) {
+		print("Count down from what number? ")
+		val start = readInt()
+		for (i <- start to 1 by -1) {
 			print(i + ", ")
 		}
 		println("lift off!")

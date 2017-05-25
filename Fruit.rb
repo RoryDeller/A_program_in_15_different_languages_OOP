@@ -20,7 +20,9 @@ class Fruit
 		"I am a " + @colour + " fruit called " + @name + "."
 	end
 end
-for i in 10.downto(1)
+print "Count down from what number? "
+start = gets
+for i in start.to_i.downto(1)
 	print i.to_s + ", "
 end
 puts "lift off!"

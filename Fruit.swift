@@ -23,7 +23,9 @@ class Fruit {
 		return ("I am a " + self.colour + " fruit called " + self.name + ".")
 	}
 }
-for i in (1...10).reversed() {
+print("Count down from what number? ", terminator: "")
+let start = Int(readLine()!)!;
+for i in (1...start).reversed() {
 	print(String(i) + ", ", terminator : "")
 }
 print("lift off!")

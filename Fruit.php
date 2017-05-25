@@ -23,7 +23,9 @@ class Fruit {
 		return "I am a " . $this->colour . " fruit called " . $this->name . ".";
 	}
 }
-for ($i = 10; $i > 0; $i--) {
+echo "Count down from what number? ";
+$start = fgets(STDIN);
+for ($i = (int) $start; $i > 0; $i--) {
 	echo $i . ", ";
 }
 echo "lift off!\n";

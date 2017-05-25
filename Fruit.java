@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 public class Fruit {
 	private static String longestName = "";
 	public static String getLongestName() {
@@ -22,8 +25,11 @@ public class Fruit {
 	public String describe() {
 		return "I am a " + colour + " fruit called " + name + ".";
 	}
-	public static void main(String[] args) {
-		for (int i = 10; i > 0; i--) {
+	public static void main(String[] args) throws IOException {
+		System.out.print ("Count down from what number? ");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
+		String userInput = br.readLine();		
+		for (int i = Integer.parseInt(userInput); i > 0; i--) {
 			System.out.print(i + ", ");
 		}
 		System.out.println("lift off!");

@@ -17,8 +17,10 @@ class Fruit {
 	public string describe() {
 		return "I am a " + colour + " fruit called " + name + ".";
 	}
-	static void Main() {
-		for (int i = 10; i > 0; i--) {
+	static void Main() {			
+		Console.Write("Count down from what number? ");
+		var start = Console.ReadLine();
+		for (int i = Int32.Parse(start); i > 0; i--) {
 			Console.Write(i + ", ");
 		}
 		Console.WriteLine("lift off!");

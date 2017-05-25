@@ -22,7 +22,9 @@ Fruit = {
 		return self
 	end,
 }
-for i=10,1,-1 do
+io.write("Count down from what number? ")
+start = io.stdin:read()
+for i=tonumber(start),1,-1 do
 	io.write(i .. ", " )
 end
 print ("lift off!")

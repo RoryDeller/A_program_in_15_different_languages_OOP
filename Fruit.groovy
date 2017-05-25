@@ -16,7 +16,8 @@ class Fruit {
 		return "I am a " + colour + " fruit called " + name + "."
 	}
 	public static void main(String[] args) {
-		for (def i in 10 .. 1) {
+		def start = System.console().readLine 'Count down from what number? '
+		for (def i in start.toInteger() .. 1) {
 			print i + ", "
 		}
 		println "lift off!"

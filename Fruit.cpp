@@ -35,7 +35,10 @@ string Fruit::describe() {
 }
 int main()
 {
-	for (int i = 10; i > 0; i--) {
+	cout << "Count down from what number? ";
+	int start;
+	cin >> start;
+	for (int i = start; i > 0; i--) {
 		cout << i << ", ";
 	}
 	cout << "lift off!" << endl;

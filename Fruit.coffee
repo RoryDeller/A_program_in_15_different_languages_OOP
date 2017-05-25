@@ -1,3 +1,4 @@
+prompt = require('syncprompt')
 longestName = ""
 class Fruit
 	@getLongestName: () ->
@@ -14,7 +15,8 @@ class Fruit
 	describe: () ->
 		return "I am a " + @colour + " fruit called " + @name + "."
 countdown = ""
-for i in [10 .. 1]
+start = prompt('Count down from what number? ')
+for i in [start .. 1]
 	countdown += i + ", "
 console.log countdown + "lift off!"
 fruits = [ new Fruit("Apple", "Green"),

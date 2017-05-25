@@ -21,7 +21,8 @@ class Fruit {
 		return "I am a " ~ $!colour ~ " fruit called " ~ $!name ~ ".";
 	}
 }
-loop (my $i = 10; $i > 0; $i--) {
+my $start = prompt("Count down from what number? ");
+loop (my $i = $start.Int; $i > 0; $i--) {
 	print($i.Str ~ ", ");
 }
 say("lift off!");

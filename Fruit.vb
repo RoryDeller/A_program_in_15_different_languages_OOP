@@ -25,7 +25,9 @@ Module FruitModule
 		End Function
 	End Class
 	Sub Main()
-		For i As Integer = 10 to 1 Step -1
+		Console.Write("Count down from what number? ")
+		Dim start As String = Console.ReadLine()
+		For i As Integer = Int32.Parse(start) to 1 Step -1
 			Console.Write(Str(i).Trim() + ", ")
 		Next
 		Console.WriteLine("lift off!")

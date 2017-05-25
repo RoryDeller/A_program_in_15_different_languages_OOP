@@ -24,7 +24,10 @@ func (f Fruit) describe() string {
 	return "I am a " + f.colour + " fruit called " + f.name + "."
 }
 func main() {
-	for i := 10; i > 0; i-- {
+	fmt.Print("Count down from what number? ")
+	var start int
+    fmt.Scan(&start)
+	for i := start; i > 0; i-- {
 		 fmt.Print(fmt.Sprintf("%d, ", i))
 	}
 	fmt.Println("lift off!")

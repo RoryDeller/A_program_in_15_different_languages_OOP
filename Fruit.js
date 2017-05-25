@@ -1,3 +1,4 @@
+var prompt = require('syncprompt');
 let longestName = "";
 class Fruit {
 	static getLongestName() {
@@ -20,8 +21,9 @@ class Fruit {
 		return "I am a " + this.colour + " fruit called " + this.name + ".";
 	}
 }
+let start = prompt('Count down from what number? ');
 let countdown = "";
-for (let i = 10; i > 0; i--) {
+for (let i = start; i > 0; i--) {
 	countdown += i + ", ";
 }
 console.log(countdown + "lift off!");

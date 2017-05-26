@@ -45,3 +45,7 @@ echo
 echo 15. Lua
 lua Fruit.lua
 echo
+echo 16. F#
+fsharpc --nologo Fruit.fs && mono Fruit.exe && rm Fruit.exe
+echo
+

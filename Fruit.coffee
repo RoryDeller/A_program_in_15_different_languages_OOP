@@ -1,12 +1,12 @@
 prompt = require('syncprompt')
-longestName = ""
 class Fruit
+	@longestName = ""
 	@getLongestName: () ->
-		return longestName
+		return Fruit.longestName
 	constructor: (name, colour) ->
 		@name = name
-		if @name.length > longestName.length
-			longestName = @name
+		if @name.length > Fruit.longestName.length
+			Fruit.longestName = @name
 		@colour = colour
 	getName: () ->
 		return @.name

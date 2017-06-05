@@ -6,8 +6,7 @@ type Fruit(name: string, colour) =
     member this.name = name
     member val colour = colour with get, set 
     member this.describe() = sprintf "I am a %s fruit called %s" this.colour this.name
-[<EntryPoint>]
-let main argv = 
+let main() = 
     printf "Count down from what number? "
     let start = Console.ReadLine() |> int
     for i = start downto 1 do
@@ -27,4 +26,4 @@ let main argv =
         printfn "%s" (fruit.describe())
     )
     printfn "The longest fruit name is %s!" (Fruit.getLongestName())
-    0
+main()

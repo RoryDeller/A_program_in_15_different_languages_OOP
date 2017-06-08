@@ -34,7 +34,7 @@ fruits = [ Fruit.new("Apple", "Green"),
 fruitCount = fruits.length
 puts "There are " + fruitCount.to_s + " fruits..."
 for fruit in fruits
-	if (fruit.name == "Grape")
+	if fruit.name == "Grape"
 		fruit.colour = "Purple"
 	end
 	puts fruit.describe

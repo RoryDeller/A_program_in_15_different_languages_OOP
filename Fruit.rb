@@ -5,7 +5,7 @@ class Fruit
 	end
 	def initialize(name, colour)
 		@name = name
-		if (name.length() > @@longestName.length())
+		if name.length() > @@longestName.length()
 			@@longestName = name
 		end
 		@colour = colour
